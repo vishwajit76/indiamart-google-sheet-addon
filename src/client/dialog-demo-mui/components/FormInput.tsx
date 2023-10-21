@@ -1,4 +1,4 @@
-import React, { useState, ChangeEvent, FormEvent } from 'react';
+import React, {useEffect, useState, ChangeEvent, FormEvent } from 'react';
 import { Button, Grid, TextField, Typography } from '@mui/material';
 
 interface FormInputProps {
@@ -22,11 +22,16 @@ const FormInput = ({ submitNewSheet }: FormInputProps) => {
     setNewSheetName('');
   };
 
+  
   return (
     <form
       onSubmit={handleSubmit}
     >
-      <Grid container spacing={2}>
+      <Grid sx={{display:"flex",
+    justifyContent:"center",
+    flexDirection:"column",gap:"10px",
+    alignItems:"center"
+    }} spacing={2}>
         <Grid item xs={10}>
           <TextField
             id="sheet-name"
