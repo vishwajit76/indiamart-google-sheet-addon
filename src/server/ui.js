@@ -1,9 +1,9 @@
 export const onOpen = () => {
   const menu = SpreadsheetApp.getUi()
-    .createMenu('My Sample React Project') // edit me!
+    .createMenu('Indiamart Addon') // edit me!
     // .addItem('Sheet Editor', 'openDialog')
     // .addItem('Sheet Editor (Bootstrap)', 'openDialogBootstrap')
-    .addItem('Sheet Editor (MUI)', 'openDialogMUI')
+    .addItem('Open', 'openDialogMUI')
     // .addItem('Sheet Editor (Tailwind CSS)', 'openDialogTailwindCSS')
     // .addItem('About me', 'openAboutSidebar');
 
@@ -25,10 +25,16 @@ export const onOpen = () => {
 // };
 
 export const openDialogMUI = () => {
+  // const html = HtmlService.createHtmlOutputFromFile('dialog-demo-mui')
+  //   // .setWidth(600)
+  //   // .setHeight(600);
+  // SpreadsheetApp.getUi().showSidebar(html);
+
   const html = HtmlService.createHtmlOutputFromFile('dialog-demo-mui')
-    // .setWidth(600)
-    // .setHeight(600);
-  SpreadsheetApp.getUi().showSidebar(html);
+  .setWidth(330)
+  .setHeight(550);
+SpreadsheetApp.getUi().showModalDialog(html, 'Indiamart Addon');
+
 };
 
 // export const openDialogTailwindCSS = () => {

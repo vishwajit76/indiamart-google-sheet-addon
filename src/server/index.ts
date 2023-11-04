@@ -7,7 +7,29 @@ import {
   openAboutSidebar,
 } from './ui';
 
-import { getSheetsData, addSheet, deleteSheet, setActiveSheet ,readData,userActive} from './sheets';
+import {
+  getSheetsData,
+  addSheet,
+  deleteSheet,
+  setActiveSheet,
+  readData,
+  verifyLicense,
+  productDetails,
+  columns,
+  resellerData,
+  setting,
+  renewLicenseKey,
+  getLicenseDetails,
+  getVersion,
+  getTrial,
+  onActiveLicense,
+  saveSetting,
+  getIDs,
+  fetchIndiaMart,
+  sheets,
+  setTriggerManually,
+  statistics
+} from './sheets';
 
 // Public functions must be exported as named exports
 export {
@@ -22,5 +44,20 @@ export {
   deleteSheet,
   setActiveSheet,
   readData,
-  userActive,
+  verifyLicense,
+  productDetails,
+  columns,
+  resellerData,
+  setting,
+  renewLicenseKey,
+  getLicenseDetails,
+  getVersion,
+  getTrial,
+  onActiveLicense,
+  saveSetting,
+  getIDs,
+  fetchIndiaMart,
+  sheets,
+  setTriggerManually,
+  statistics
 };

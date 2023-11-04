@@ -1,10 +1,22 @@
 {
-  "timeZone": "America/New_York",
+  "timeZone": "Asia/Kolkata",
   "dependencies": {},
   "exceptionLogging": "STACKDRIVER",
   "oauthScopes": [
     "https://www.googleapis.com/auth/script.container.ui",
-    "https://www.googleapis.com/auth/spreadsheets"
+    "https://www.googleapis.com/auth/spreadsheets",
+    "https://www.googleapis.com/auth/script.external_request",
+    "https://www.googleapis.com/auth/script.scriptapp"
   ],
-  "runtimeVersion": "V8"
+  "runtimeVersion": "V8",
+  "urlFetchWhitelist": [
+    "https://api.digibulkmarketing.com/license/product",
+    "https://api.digibulkmarketing.com/license/verify",
+    "https://api.digibulkmarketing.com/license/active",
+    "https://api.digibulkmarketing.com/license/get-trial",
+    "https://api.digibulkmarketing.com/license/renew-license-key",
+    "https://api.digibulkmarketing.com/license/details",
+    "https://mapi.indiamart.com/wservce/crm/crmListing/v2/"
+   
+  ]
 }

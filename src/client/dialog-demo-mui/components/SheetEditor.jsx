@@ -47,10 +47,7 @@ const SheetEditor = () => {
     console.log("data=-====-",data)
   };
 
-  return (<>
-  <Button onClick={(e)=>sendData()}>Check Data</Button>
-    <Form />
-  </>)
+  return <Form />
 };
 
 
